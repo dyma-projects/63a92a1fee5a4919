@@ -1,0 +1,13 @@
+<form>
+  <label>type something</label> <br /><br />
+  <input
+    #var1
+    type="text"
+    [value]="inputValue"
+    (input)="listenToInput(var1.value)"
+  />
+  <br /><br />
+  <button (click)="onClick()">clear text</button>
+  <br />
+</form>
+{{ something }}
